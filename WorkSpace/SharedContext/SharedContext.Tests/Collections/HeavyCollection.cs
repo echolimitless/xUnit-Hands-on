@@ -3,7 +3,9 @@ using Xunit;
 
 namespace SharedContext.Tests.Collections
 {
-    public class HeavyCollection
+    [CollectionDefinition("Heavy collection")]
+    public class HeavyCollection : ICollectionFixture<HeavyFixture>
     {
+
     }
 }
